@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Artes\LaravelBuilder\Base\EloquentModel as Model;
+
+class DummyClass extends Model
+{
+    //
+}

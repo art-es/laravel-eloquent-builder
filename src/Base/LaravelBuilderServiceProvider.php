@@ -3,6 +3,7 @@
 namespace Artes\LaravelBuilder\Base;
 
 use Artes\LaravelBuilder\Base\Commands\BuilderMakeCommand;
+use Artes\LaravelBuilder\Base\Commands\ModelMakeCommand;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,6 +13,7 @@ class LaravelBuilderServiceProvider extends ServiceProvider
     {
         $this->commands([
             BuilderMakeCommand::class,
+            ModelMakeCommand::class,
         ]);
     }
 }

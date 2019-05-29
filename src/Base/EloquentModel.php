@@ -1,6 +1,6 @@
 <?php
 
-namespace Artes\LaravelBuilder;
+namespace Artes\LaravelBuilder\Base;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -8,16 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Artes\LaravelBuilder\EloquentModel
  *
- * @method static \Illuminate\Database\Eloquent\Builder|\Artes\LaravelBuilder\EloquentModel newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\Artes\LaravelBuilder\EloquentModel newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\Artes\LaravelBuilder\EloquentModel query()
- * @mixin \Eloquent
+ * @method static Builder|EloquentModel newModelQuery()
+ * @method static Builder|EloquentModel newQuery()
+ * @method static Builder|EloquentModel query()
  */
 class EloquentModel extends Model
 {
+    /**
+     * If you want to use your custom builder
+     * you need to override this variable
+     *
+     * @var string $builder
+     */
     protected $builder = Builder::class;
 
     /**
+     * Overridden method for using custom builders
+     *
      * @param  \Illuminate\Database\Query\Builder  $query
      * @return Builder|Model
      */

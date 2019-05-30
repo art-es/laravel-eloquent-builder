@@ -13,7 +13,10 @@ class LaravelBuilderServiceProvider extends ServiceProvider
     {
         $this->commands([
             BuilderMakeCommand::class,
-            ModelMakeCommand::class,
         ]);
+
+        $this->app->extend('command.model.make', function ($app) {
+            return new ModelMakeCommand(new \Illuminate\Filesystem\Filesystem);
+        });
     }
 }

@@ -21,17 +21,3 @@ Command for create builder
 ```
 php artisan make:builder <builder-name>
 ```
-
-Example:
-
-You have `Post.php` model. And you need create builder for this model.
-
-```
-php artisan make:builder UserBuilder
-```
-
-The builder is in `app\Builders` directory
-
-## Info 
-
-Updated command `php artisan make:model`, model extended `\Artes\LaravelBuilder\Base\EloquentModel`

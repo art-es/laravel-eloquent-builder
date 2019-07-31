@@ -21,3 +21,7 @@ Command for create builder
 ```
 php artisan make:builder <builder-name>
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

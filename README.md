@@ -5,7 +5,7 @@
 #### Downloading
 
 ```
-composer require art-es/laravel-eloquent-builder
+composer require art-es/laravel-builder
 ```
 
 #### Registering the service provider

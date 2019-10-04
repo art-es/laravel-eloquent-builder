@@ -20,5 +20,12 @@
         "psr-4": {
             "Artes\\LaravelBuilder\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Artes\\LaravelBuilder\\Base\\LaravelBuilderServiceProvider"
+            ]
+        }
     }
 }

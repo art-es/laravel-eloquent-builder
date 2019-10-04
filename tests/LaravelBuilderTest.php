@@ -1,19 +1,11 @@
 <?php
 
-use Illuminate\Foundation\Testing\TestCase;
-use Illuminate\Support\Facades\Artisan;
+use PHPUnit\Framework\TestCase;
 
 class LaravelBuilderTest extends TestCase
 {
-    /**
-     * Creates the application.
-     *
-     * Needs to be implemented by subclasses.
-     *
-     * @return \Symfony\Component\HttpKernel\HttpKernelInterface
-     */
-    public function createApplication()
+    public function testBuilder(): void
     {
-        // TODO: Implement createApplication() method.
+        $this->assertTrue(true);
     }
 }

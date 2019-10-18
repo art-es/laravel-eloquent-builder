@@ -1,11 +1,17 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
 
 class LaravelBuilderTest extends TestCase
 {
-    public function testBuilder(): void
+    protected function setUp(): void
     {
-        $this->assertTrue(true);
+        parent::setUp();
+    }
+
+    public function testSearchBy(): void
+    {
+//        $model = new Model();
+//        $model::query();
     }
 }

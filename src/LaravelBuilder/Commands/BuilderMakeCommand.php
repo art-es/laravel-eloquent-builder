@@ -1,6 +1,6 @@
 <?php
 
-namespace Artes\LaravelBuilder\Base\Commands;
+namespace Artes\LaravelBuilder\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

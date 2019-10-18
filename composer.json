@@ -18,13 +18,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "Artes\\LaravelBuilder\\": "src/"
+            "Artes\\LaravelBuilder\\": "src/LaravelBuilder/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Artes\\LaravelBuilder\\Base\\LaravelBuilderServiceProvider"
+                "Artes\\LaravelBuilder\\LaravelBuilderServiceProvider"
             ]
         }
     }

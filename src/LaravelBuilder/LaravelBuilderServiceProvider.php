@@ -1,8 +1,8 @@
 <?php
 
-namespace Artes\LaravelBuilder\Base;
+namespace Artes\LaravelBuilder;
 
-use Artes\LaravelBuilder\Base\Commands\BuilderMakeCommand;
+use Artes\LaravelBuilder\Commands\BuilderMakeCommand;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 

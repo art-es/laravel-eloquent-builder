@@ -1,6 +1,6 @@
 <?php
 
-namespace Artes\LaravelBuilder\Base;
+namespace Artes\LaravelBuilder;
 
 use Illuminate\Database\Eloquent\Builder as BaseBuilder;
 use Illuminate\Database\Query\Builder;
